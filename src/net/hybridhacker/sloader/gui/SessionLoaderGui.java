@@ -34,6 +34,10 @@ public final class SessionLoaderGui {
 	private JFrame frmAltloader;
 	private JTextField textField;
 
+	/**
+	 * Program Entry point
+	 * @param args the command line args
+	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -56,6 +60,9 @@ public final class SessionLoaderGui {
 		});
 	}
 
+	/**
+	 * Constructs the Session GUI
+	 */
 	public SessionLoaderGui() {
 		try {
 			initialize();
@@ -65,6 +72,13 @@ public final class SessionLoaderGui {
 		}
 	}
 
+	/**
+	 * Initializes the GUI Components
+	 * @throws SAXException
+	 * @throws IOException
+	 * @throws ParserConfigurationException
+	 * @throws RuntimeException
+	 */
 	private void initialize() throws SAXException, IOException, ParserConfigurationException, RuntimeException {
 		final Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(this.getClass().getResourceAsStream("/language.xml"));
 		
@@ -138,6 +152,12 @@ public final class SessionLoaderGui {
 		this.frmAltloader.getContentPane().add(lblformatNameuuidtokentoken);
 	}
 	
+	/**
+	 * Returns the language text from an xml element by a tag
+	 * @param lang the xml element
+	 * @param tag the xml tag
+	 * @return the language text
+	 */
 	private static String getLangText(Element lang, String tag) {
 		return lang.getElementsByTagName(tag).item(0).getTextContent();
 	}

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<languages current="en">
+	<language name="en">
+		<title>Session Loader</title>
+		
+		<token>Enter Session:</token>
+		<hint>(Format: name:uuid:token:token2)</hint>
+		
+		<load>Load</load>
+		
+		<success>Successfully injected Account %s</success>
+		
+		<error1>Please provide information</error1>
+		<error2>Please provide information in\nthe correct format</error2>
+		<error3>An error occurred\n%s</error3>
+		
+		<footer>hybridhacker.net</footer>
+	</language>
+	<language name="de">
+		<title>Session Loader</title>
+		
+		<token>Session eingeben:</token>
+		<hint>(Format: name:uuid:token:token2)</hint>
+		
+		<load>Laden</load>
+		
+		<success>Successfully injected Account %s</success>
+			
+		<error1>Bitte gebe alle Informationen an</error1>
+		<error2>Bitte gebe alle Informationen\nim richtigen Format an</error2>
+		<error3>Ein Fehler ist aufgetreten\n%s</error3>
+		
+		<footer>hybridhacker.net</footer>
+	</language>
+</languages>
